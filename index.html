@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dusting Zone</title>
+    <meta name="description" content="It’s oh-so-satisfying to wipe the dust off a screen or erase a dusty chalkboard.">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="shortcut icon" href="images/feather.png" />
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta content="It’s oh-so-satisfying to wipe the dust off a screen or erase a dusty chalkboard." name="twitter:description" property="og:description">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>The Dusting Zone</h1>
+            <p><a href="https://github.com/saad-amir-dev">Saad Amir</a> project</p>
+        </div>
+        <form autocomplete="off">
+            <label id="screen" class="form-control">
+              <input type="radio" name="radio" checked />Screen</label>
+            <label id="chalk" class="form-control">
+              <input type="radio" name="radio" />Chalk</label>
+            <label id="white" class="form-control">
+              <input type="radio" name="radio" />Dry Erase</label>
+        </form>
+        <button id="clr" onclick="erase()">Reset</button>
+    </header>
+    <div id="canvas-bg" class="dusty">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="draw.min.js"></script>
+</body>
+</html>
